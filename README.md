@@ -8,8 +8,8 @@ Go to the [Download Link](https://drive.google.com/file/d/1lnfoXFfFoLOEkL_aTIGsS
 
 ## Screenshots
 <p align="center">
-<img src="/preview/preview1.png" width="32%"/>
-<img src="/preview/preview2.png" width="32%"/>
+<img src="/preview/image1.png" width="32%"/>
+<img src="/preview/image2.png" width="32%"/>
 </p>
 
 ## Tech stack & Open-source libraries
