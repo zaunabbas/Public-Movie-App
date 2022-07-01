@@ -55,7 +55,7 @@ class ListViewModelTest {
             listRepository.loadPopularTvShows(
                 onStart = { assert(true) },
                 onCompletion = {},
-                onError = {  },
+                onError = {},
             ).collect {
                 assert(it.isNotEmpty())
             }

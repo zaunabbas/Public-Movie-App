@@ -15,7 +15,7 @@ class ListViewModel @Inject constructor(
 
     val isLoading = MutableStateFlow(false)
 
-    val posterList: Flow<List<Movie>> =
+    val popularTvShowsList: Flow<List<Movie>> =
         listRepository.loadPopularTvShows(
             onStart = { isLoading.value = true },
             onCompletion = { isLoading.value = false },

@@ -5,7 +5,6 @@ import java.util.*
 
 private const val DEFAULT_FORMAT = "dd/MM/yyyy"
 
-
 fun Date.toCustomFormat(format: String): String {
     val sdf = SimpleDateFormat(format, Locale.getDefault())
     return sdf.format(this)

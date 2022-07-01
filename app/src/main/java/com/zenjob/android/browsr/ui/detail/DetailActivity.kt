@@ -10,10 +10,13 @@ import com.zenjob.android.browsr.data.Movie
 import com.zenjob.android.browsr.databinding.ActivityDetailBinding
 import com.zenjob.android.browsr.util.BundleConstant.MOVIE_DATA
 import com.zenjob.android.browsr.util.Constants
+import com.zenjob.android.browsr.util.format
 
 class DetailActivity : AppCompatActivity() {
 
     private lateinit var binding: ActivityDetailBinding
+
+
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -30,7 +33,7 @@ class DetailActivity : AppCompatActivity() {
     fun showMovieDetails(movie: Movie?) {
         movie?.let {
             binding.tvTitle.text = movie.title
-            binding.tvReleaseDate.text = DateFormat.format("dd/MM/yyyy", movie.releaseDate)
+            binding.tvReleaseDate.text = movie.releaseDate?.format()
             binding.tvRating.text = "${movie.voteAverage ?: 0}"
             binding.tvDescription.text = movie.overview
 
@@ -41,7 +44,6 @@ class DetailActivity : AppCompatActivity() {
                 .placeholder(R.drawable.ic_launcher_background)
                 .error(R.drawable.ic_launcher_background)
                 .into(binding.ivMovie)
-
         }
     }
 

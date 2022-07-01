@@ -5,9 +5,7 @@ import android.os.Bundle
 import androidx.activity.viewModels
 import androidx.annotation.VisibleForTesting
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.view.isVisible
 import androidx.lifecycle.lifecycleScope
-import androidx.recyclerview.widget.RecyclerView
 import androidx.swiperefreshlayout.widget.SwipeRefreshLayout
 import com.zenjob.android.browsr.data.Movie
 import com.zenjob.android.browsr.databinding.ActivityListBinding
@@ -53,7 +51,6 @@ class ListActivity : AppCompatActivity(), SwipeRefreshLayout.OnRefreshListener,
             listener = this@ListActivity
         }
         binding.list.adapter = mAdapter
-
         //
     }
 
@@ -67,9 +64,9 @@ class ListActivity : AppCompatActivity(), SwipeRefreshLayout.OnRefreshListener,
     }
 
 
-     fun fetchMovies() {
+    private fun fetchMovies() {
         lifecycleScope.launch {
-            listViewModel.posterList.collect {
+            listViewModel.popularTvShowsList.collect {
                 mAdapter.submitRefreshList(it)
             }
         }

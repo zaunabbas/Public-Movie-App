@@ -37,7 +37,7 @@ class ListActivityInjectionTest {
                 assertThat(activity.listViewModel).isNotNull()
 
                 runBlocking {
-                    activity.listViewModel.posterList.collect { list ->
+                    activity.listViewModel.popularTvShowsList.collect { list ->
                         assert(list.isNotEmpty())
                     }
                 }
