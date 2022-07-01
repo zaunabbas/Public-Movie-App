@@ -20,9 +20,6 @@ class DetailActivity : AppCompatActivity() {
         binding = ActivityDetailBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        actionBar?.setHomeButtonEnabled(true)
-        actionBar?.setDisplayHomeAsUpEnabled(true)
-
         val movie =
             if (intent.hasExtra(MOVIE_DATA)) intent.getSerializableExtra(MOVIE_DATA) as Movie else null
 
