@@ -1,4 +1,4 @@
-<h1 align="center">Movies App</h1></br>
+<h1 align="center">Movies App</h1>
  
 A simple Movie app using [TMDB API](https://www.themoviedb.org) with modern Android tech-stacks and MVVM architecture.Fetching data from the network and the data via repository pattern.
 
