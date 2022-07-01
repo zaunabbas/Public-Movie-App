@@ -8,8 +8,8 @@ Go to the [Download Link](https://drive.google.com/file/d/1lnfoXFfFoLOEkL_aTIGsS
 
 ## Screenshots
 <p align="center">
-<img src="/preview/zen_list.png" width="32%"/>
-<img src="/preview/zen_details.png" width="32%"/>
+<img src="/preview/preview1.png" width="32%"/>
+<img src="/preview/preview2.png" width="32%"/>
 </p>
 
 ## Tech stack & Open-source libraries
