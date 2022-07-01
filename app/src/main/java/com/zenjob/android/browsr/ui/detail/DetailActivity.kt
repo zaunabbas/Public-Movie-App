@@ -29,7 +29,6 @@ class DetailActivity : AppCompatActivity() {
     @VisibleForTesting
     fun showMovieDetails(movie: Movie?) {
         movie?.let {
-
             binding.tvTitle.text = movie.title
             binding.tvReleaseDate.text = DateFormat.format("dd/MM/yyyy", movie.releaseDate)
             binding.tvRating.text = "${movie.voteAverage ?: 0}"
