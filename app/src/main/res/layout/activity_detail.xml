@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nestedDetail"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBlack"
+    android:clipToPadding="false"
+    android:paddingBottom="16dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/clContent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/ivMovie"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:scaleType="centerCrop"
+            app:layout_constraintDimensionRatio="1:1.2"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:src="@mipmap/ic_launcher" />
+
+        <TextView
+            android:id="@+id/tvRating"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="5dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/draw_vote_average"
+            android:drawablePadding="5dp"
+            android:gravity="center_vertical"
+            android:paddingStart="8dp"
+            android:paddingEnd="8dp"
+            android:padding="2dp"
+            android:maxLines="1"
+            android:textColor="@color/colorWhite"
+            android:textSize="13sp"
+            app:drawableStartCompat="@drawable/ic_baseline_star_rate"
+            app:drawableTint="@color/colorWhite"
+            app:layout_constraintBottom_toTopOf="@id/tvTitle"
+            app:layout_constraintEnd_toEndOf="parent"
+            tools:text="2.5" />
+
+        <TextView
+            android:id="@+id/tvReleaseDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/draw_vote_average"
+            android:drawablePadding="5dp"
+            android:gravity="center_vertical"
+            android:padding="8dp"
+            android:textAppearance="?attr/textAppearanceBody2"
+            android:textColor="@color/colorWhite"
+            app:drawableStartCompat="@drawable/ic_baseline_calendar_month"
+            app:drawableTint="@color/colorWhite"
+            app:layout_constraintBottom_toTopOf="@id/tvTitle"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:text="25/01/1998" />
+
+        <TextView
+            android:id="@+id/tvTitle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:padding="10dp"
+            android:text="test"
+            android:textAppearance="?attr/textAppearanceHeadline4"
+            android:textColor="@color/colorWhite"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ivMovie"
+            tools:text="Fight Club" />
+
+        <TextView
+            android:id="@+id/tvDescription"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="20dp"
+            android:textAppearance="?attr/textAppearanceBody2"
+            android:textColor="@color/colorWhite"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvTitle"
+            tools:text="This is Content Description" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.core.widget.NestedScrollView>

@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Browsr</string>
+    <string name="error_no_data">No Data</string>
+    <string name="loading">Loading…</string>
+</resources>
